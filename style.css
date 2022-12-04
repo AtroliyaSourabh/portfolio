@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main1{
+    height: 100vh;
+    background-image: url('background1.jpg');
+    background-size: cover;
+}
+
+h1{
+    color: transparent;
+    position: relative;
+    left: 0;
+    display: inline-block;
+    animation: revel 0.5s ease forwards;
+    animation-delay: 0.5s;
+    margin: 2px;
+}
+
+h1:nth-child(1){
+    animation-delay: 1s;
+}
+h1:nth-child(2){
+    animation-delay: 2s;
+}
+h1:nth-child(3){
+    animation: revel_name 0.5s ease forwards;
+    animation-delay: 3s;
+}
+h1:nth-child(1) span{
+    animation-delay: 0.5s;
+}
+h1:nth-child(2) span{
+    animation-delay: 1.5s;
+}
+h1:nth-child(3) span{
+    animation-delay: 2.5s;
+
+}
+
+h1 span{
+    position: absolute;
+    height: 100%;
+    width: 0%;
+    background-color: deeppink;
+    left: 0;
+    right: 0;
+    animation: overflow 1s ease forwards;
+}
+
+@keyframes overflow {
+    50%{
+        width: 100%;
+        left: 0;
+    }
+    100%{
+        width: 0%;
+        left: 100%;
+    }
+}
+
+@keyframes revel {
+    100%{
+        color: white;
+    }
+}
+@keyframes revel_name{
+    100%{
+        color: deeppink;
+    }
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 23px;
+    position: fixed;
+    width: 100vw;
+    top: -24px;
+    background-color: black;
+    height: 88px;
+    overflow: hidden;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    width: 15vw;
+    overflow: hidden;
+    height: 17vh;
+}
+
+.logo img{
+    width: 19vw;
+    border-radius: 38px;
+    width: 15vw;
+}
+
+ul{
+    display: flex;
+    
+}
+
+ul li{
+    list-style: none;
+    text-decoration: none;
+    margin: 0px 23px;
+    color: white;
+}
+
+ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+button{
+    background-color: deeppink;
+    color: white;
+    border-radius: 13px;
+    width: 92px;
+    height: 24px;
+    border: 0px;
+}
+
+button:hover{
+    background-color: rgb(56, 54, 54);
+}
+
+.main{
+    color: white;
+    height: 73vh;
+    width: 36vw;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: center;
+}
+
+.hello{
+    color: white;
+    margin: 105px;
+    margin-bottom: 1px;
+}
+
+.name{
+    display: flex;
+    margin: 102px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+.first{
+    color: white;
+    font-size: 77px;
+}
+
+.las{
+    color: deeppink;
+    font-size: 77px;
+    margin-left: 14px;
+}
+
+.web{
+    color: transparent;
+    margin-left: 108px;
+    animation: revel 0.5s ease forwards;
+    animation-delay: 3s;
+}
+
+.letstart{
+    margin-left: 108px;
+    margin-top: 45px;
+}
+
+.page2{
+    background-color: #d17979;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page2inner{
+    display: flex;
+    height: 614px;
+    width: 666px;
+    justify-content: center;
+    align-items: center;
+}
+
+.image2 img{
+    height: 52vh;
+    width: 22vw;
+}
+
+.aboutme{
+    margin-left: 29px;
+}
+
+.text{
+    font-size: 60px;
+    color: white;
+}
+
+.developer{
+    display: flex;
+}
+
+.d1{
+    color: white;
+}
+
+.d2{
+    color: deeppink;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+.textcontent{
+    color: darkgrey;
+    font-size: 18px;
+    text-align: justify;
+    margin-bottom: 33px;
+    font-family : 'Ubuntu', sans-serif;
+}
+
+.page3{
+    background-color: black;
+    color: white;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page3content{
+    height: 59vh;
+    width: 100vw;
+}
+
+.sevices{
+    text-align: center;
+    font-size: 31px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-around;
+    height: 290px;
+    margin-top: 40px;
+}
+
+.box2{
+    width: 226px;
+    height: 328px;
+    background-color: dimgrey;
+    border-radius: 131px;
+}
+
+.box2 img{
+    width: 100%;
+    height: 131px;
+}
+
+.heading{
+    text-align: center;
+    font-size: 23px;
+}
+
+.page3text{
+    color: darkgray;
+    /* display: flex; */
+    text-align: center;
+}
+
+.button1{
+    text-align: center;
+    margin-top: 15px;
+}
+
+.page4{
+    background-color: #704bbc;
+    color: white;
+    height: 30vh;
+}
+
+.page4content{
+    height: 23vh;
+    background-color: #704bbc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.page4text{
+    font-size: 42px;
+}
+
+.button3{
+    margin-top: 14px;
+}
+
+.thanks{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 23px;
+}
+
